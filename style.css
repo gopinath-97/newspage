@@ -1,0 +1,211 @@
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.nav {
+  padding-top: 1rem;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  position: relative;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.main-nav-link {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #868e96;
+}
+.main-nav-link:hover {
+  color: #fab005;
+}
+.btn-mobile {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  z-index: 10000;
+}
+.icon-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+.icon-nav[name="close-outline"] {
+  display: none;
+}
+.hero {
+  padding: 2rem 0;
+}
+.hero-text {
+  font-size: 5.6rem;
+  padding: 2rem 5rem 0 0;
+  line-height: 0.9;
+  font-weight: 700;
+  color: #212529;
+}
+.hero-description {
+  font-size: 1.8rem;
+  padding: 2rem 2rem 0 0;
+  line-height: 1.3;
+  color: #868e96;
+}
+.hero-btn {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff6b6b;
+  color: #f8f9fa;
+  border: none;
+  margin-top: 2rem;
+}
+.hero-btn:hover {
+  color: #fab005;
+  background-color: #212529;
+}
+.side {
+  background-color: #212529;
+  padding: 3rem 2rem;
+}
+.side > h2 {
+  color: #fab005;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.side > a {
+  text-decoration: none;
+  color: #f8f9fa;
+  font-size: 2rem;
+}
+.side > a:hover {
+  color: #fab005;
+}
+.side > p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: #adb5bd;
+}
+.line {
+  color: #f8f9fa;
+  margin: 3rem 0;
+}
+.list-group {
+  text-decoration: none;
+  list-style: none;
+  gap: 2rem;
+}
+.card {
+  height: 80%;
+  color: #868e96;
+}
+
+.card-bod {
+  padding: 0 1rem;
+}
+.card-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.card-link,
+a {
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: #212529;
+  font-weight: 700;
+}
+.card-link:hover {
+  color: #ff6b6b;
+}
+.text {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+
+@media (max-width: 425px) {
+  .hero-text {
+    font-size: 3.4rem;
+  }
+  .hero-description {
+    font-size: 2rem;
+    padding-right: 0;
+  }
+  .hero-btn {
+    padding: 0.5rem 2rem;
+    margin-bottom: 4rem;
+    letter-spacing: 0.5rem;
+  }
+  .card-bod {
+    padding: 0rem 1rem;
+  }
+  .c-img {
+    width: 30%;
+    height: 100%;
+  }
+  .card-title {
+    font-size: 2.2rem;
+  }
+  .card-link {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+  }
+  .text {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .btn-mobile {
+    display: block;
+  }
+  .main-nav-link {
+    color: #212529;
+  }
+  .main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+  .main-nav-list {
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    position: fixed;
+    transform: translateX(0);
+    z-index: 1;
+  }
+  .nav-open .icon-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-nav[name="menu-outline"] {
+    display: none;
+  }
+  .nav-open .header {
+    position: fixed;
+  }
+}

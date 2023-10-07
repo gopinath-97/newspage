@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="container">
+    <header class="header">
+      <a href=""><img class="nav-img" src="./assets/images/logo.svg" alt=""></a>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="">Home</a></li>
+        <li><a class="main-nav-link" href="">New</a></li>
+        <li><a class="main-nav-link" href="">Popular</a></li>
+        <li><a class="main-nav-link" href="">Trending</a></li>
+        <li><a class="main-nav-link" href="">Categories</a></li>
+      </ul>
+    </nav>
+    <button class="btn-mobile">
+      <ion-icon class="icon-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-nav" name="close-outline"></ion-icon>
+    </button>
+
+    </header>
+
+      <!-- head section -->
+      <main class=hero>
+        <div class="row">
+          <div class="col-md-9">
+            <picture>
+              <source srcset="./assets/images/image-web-3-mobile.jpg"
+              media="(max-width:600px)">
+              <img
+              src="./assets/images/image-web-3-desktop.jpg"
+              class="img-fluid "
+              alt="" />
+            </picture>
+            <div class="row flex-row">
+              <div class="col-md-6">
+                <h1 class="hero-text">The Bright Future of  Web 3.0?</h1>
+              </div>
+              <div class="col-md-6">
+                <p class="hero-description"> 
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button class="hero-btn">READ MORE</button>
+              </div>
+            </div>
+          </div>
+          <div class="col flex-column p-sm-1">
+            <div class="side">
+            <h2>New</h2>
+            <a href="">Hydrogen VS Electric Cars</a>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr class="line">
+
+            <a href="">The Downsides of AI Artistry</a>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+            <hr class="line">
+            <a href="">Is VC Funding Drying Up?</a>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+          </div>
+        </div>
+      </main>
+      <!-- head section completed -->
+      <!-- Bottom Section  -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card flex-row border-0">
+          <img class="c-img"  src="/assets/images/image-retro-pcs.jpg" alt="">
+          <div class="card-bod">
+            <h3 class="card-title">01</h3>
+            <a href="#" class="card-link">Reviving Retro PCs</a>
+              <p class="text">
+                What happens when old PCs are given modern upgrades?
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card flex-row border-0">
+          <img class="c-img"  src="/assets/images/image-top-laptops.jpg" alt="">
+          <div class="card-bod">
+            <h3 class="card-title">02</h3>
+            <a href="#" class="card-link">Top 10 Laptops of 2022</a>
+              <p class="text">
+                Our best picks for various needs and budgets.
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card flex-row border-0">
+          <img class="c-img" src="./assets/images/image-gaming-growth.jpg" alt="">
+          <div class="card-bod">
+            <h3 class="card-title">03</h3>
+            <a href="#" class="card-link">The Growth of Gaming</a>
+              <p class="text">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+          </div>
+        </div>
+      </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
